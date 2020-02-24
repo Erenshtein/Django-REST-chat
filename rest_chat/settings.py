@@ -83,21 +83,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'rest_chat.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'rest_chat',
-        'USER': 'rest_chat_user',
-        'PASSWORD': 'user_pa55wd',
-        'HOST': '85.187.140.186',
-        'PORT': '5432',
-    }
-}
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
