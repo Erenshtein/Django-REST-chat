@@ -2,7 +2,7 @@
 This is a Django application for public chat room with unauthorized access
 via REST API.
 
-####API methods:
+#### API methods:
 * GET method for getting all messages with pagination by 10 messages per request.
 e.g.
 /api/messages/list/0 will return first 10 messages
