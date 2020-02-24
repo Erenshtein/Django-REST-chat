@@ -1,1 +1,1 @@
-web: gunicorn rest_chat.wsgi
+web: gunicorn rest_chat.wsgi --log-file -

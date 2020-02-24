@@ -1,11 +1,7 @@
-# Chaches:
-__pycache__/
-
-# Django stuff:
 *.log
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows shortcuts
-*.lnk
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+venv/

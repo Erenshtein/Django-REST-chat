@@ -24,10 +24,12 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#hwt7=5xr#tgq7$y=t1v6z^x76s8rxcnr_zkuips237rcsue-_'
+SECRET_KEY = os.environ.get('SECRET_KEY')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -84,14 +86,12 @@ WSGI_APPLICATION = 'rest_chat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# 'USER': 'rest_chat_user',
-# 'PASSWORD': 'user_pa55wd',
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'rest_chat',
-        'USER': 'rest_chat_admin',
-        'PASSWORD': 'admin_1772',
+        'USER': 'rest_chat_user',
+        'PASSWORD': 'user_pa55wd',
         'HOST': '85.187.140.186',
         'PORT': '5432',
     }
